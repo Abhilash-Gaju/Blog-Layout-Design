@@ -2,49 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Class Study Resources</title>
+  <title>My Blog</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      color: #2c3e50;
-      text-align: center;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      max-width: 600px;
-      margin: 20px auto;
-    }
-    li {
-      background: white;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    a {
-      text-decoration: none;
-      color: #2980b9;
-      font-weight: bold;
-    }
-    a:hover {
-      color: #e74c3c;
-    }
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { text-align: center; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin-bottom: 20px; }
+    form { max-width: 400px; margin: 20px auto; }
+    input, textarea { width: 100%; padding: 8px; margin: 5px 0; }
+    button { padding: 10px 15px; background: #3498db; color: white; border: none; }
+    button:hover { background: #2980b9; }
   </style>
 </head>
 <body>
-  <h1>📚 Class Study Resources</h1>
+  <h1>Welcome to My Blog</h1>
+
+  <h2>Latest Blog Posts</h2>
   <ul>
-    <li><a href="https://www.khanacademy.org/" target="_blank">Math Resources – Khan Academy</a></li>
-    <li><a href="https://www.nasa.gov/stem" target="_blank">Science Resources – NASA STEM</a></li>
-    <li><a href="https://www.britannica.com/" target="_blank">History & Reference – Britannica</a></li>
-    <li><a href="https://www.geeksforgeeks.org/" target="_blank">Programming & CS – GeeksforGeeks</a></li>
-    <li><a href="https://www.coursera.org/" target="_blank">Online Courses – Coursera</a></li>
+    <li>
+      <h3>How to Learn HTML Quickly</h3>
+      <p>A beginner-friendly guide to mastering HTML basics.</p>
+    </li>
+    <li>
+      <h3>Understanding CSS Layouts</h3>
+      <p>Tips and tricks for building clean, responsive layouts.</p>
+    </li>
+    <li>
+      <h3>Getting Started with JavaScript</h3>
+      <p>Learn how to add interactivity to your webpages.</p>
+    </li>
   </ul>
+
+  <h2>Contact Me</h2>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="subject">Subject:</label><br>
+    <input type="text" id="subject" name="subject"><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
 </body>
 </html>
